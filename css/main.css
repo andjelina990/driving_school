@@ -31,25 +31,6 @@ ul {
   list-style: none;
 }
 
-.btn {
-  text-transform: uppercase;
-  padding: 2rem 3rem;
-  border-radius: 5px;
-  font-weight: 700;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #233785;
-  color: #ffffff;
-}
-
-.btn-secondary {
-  background-color: #ffffff;
-  color: #000;
-}
-
 .topbar {
   background-color: #233785;
   color: #ffffff;
@@ -93,29 +74,4 @@ ul {
   font-weight: 700;
   font-size: 1.8rem;
   color: #808080;
-}
-
-.hero {
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-hero.jpg");
-  background-size: cover;
-  color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-}
-
-.hero div {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
 }
