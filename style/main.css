@@ -17,11 +17,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -29,6 +24,31 @@ a {
 
 ul {
   list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.py {
+  padding: 10rem 0;
+}
+
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title h2::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 70px;
+  background-color: #233785;
+  margin: 30px auto 0;
 }
 
 .btn {
@@ -48,6 +68,12 @@ ul {
 .btn-secondary {
   background-color: #ffffff;
   color: #000;
+}
+
+.col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .topbar {
@@ -118,4 +144,64 @@ ul {
   justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+.about-home article {
+  margin-top: 3rem;
+}
+
+.about-home .wrapper {
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.about-home .wrapper:hover h3 {
+  transform: translateY(100%);
+}
+
+.about-home .wrapper:hover div {
+  transform: translateY(0);
+}
+
+.about-home .wrapper div {
+  position: absolute;
+  background-color: rgba(35, 55, 133, 0.8);
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease;
+  transform: translateY(100%);
+}
+
+.about-home .wrapper div p {
+  flex-grow: 1;
+  overflow-y: auto;
+  line-height: 1.7;
+}
+
+.about-home h3 {
+  position: absolute;
+  background-color: #233785;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+
+.about-home h3 i {
+  margin-right: 5px;
+}
+
+.about-home img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  display: block;
 }
