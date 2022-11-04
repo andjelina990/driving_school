@@ -4,6 +4,8 @@
   border-radius: 5px;
   font-weight: 700;
   display: inline-block;
+  outline: none;
+  border: none;
   cursor: pointer;
   &-primary {
     background-color: $primaryColor;
