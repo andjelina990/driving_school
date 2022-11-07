@@ -51,7 +51,6 @@ img {
 }
 
 .title h2 {
-  text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
@@ -68,6 +67,14 @@ img {
 
 .title p {
   margin-top: 20px;
+}
+
+.title-left {
+  text-align: left;
+}
+
+.title-left h2::after {
+  margin: 30px 0;
 }
 
 .btn {
@@ -95,16 +102,21 @@ img {
   color: #000;
 }
 
-.g-col-3 {
+[class*="g-col-"] {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
 
+.g-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.g-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .g-col-4 {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
 }
 
 .icon-rotate {
@@ -459,4 +471,44 @@ img {
 
 .courses-page .card:last-child {
   margin-bottom: 0px;
+}
+
+.about-page iframe {
+  width: 100%;
+}
+
+.about-page ul {
+  margin-top: 20px;
+}
+
+.about-page ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #233785;
+  margin-right: 10px;
+}
+
+.teacher article {
+  margin-top: 30px;
+}
+
+.teacher .card {
+  text-align: center;
+}
+
+.teacher .card p {
+  font-size: 1.3rem;
+}
+
+.teacher .card a {
+  font-size: 2rem;
+}
+
+.teacher .card a i {
+  color: #233785;
+}
+
+.teacher .card a:not(:last-child) {
+  margin-right: 10px;
 }
