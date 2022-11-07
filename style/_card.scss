@@ -4,6 +4,15 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  &-horisontal {
+    flex-direction: row;
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
   &-body {
     padding: 10px;
     flex-grow: 1;

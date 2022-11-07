@@ -81,6 +81,10 @@ img {
   cursor: pointer;
 }
 
+.btn-small {
+  padding: 1rem 2rem;
+}
+
 .btn-primary {
   background-color: #233785;
   color: #ffffff;
@@ -135,6 +139,15 @@ img {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.card-horisontal {
+  flex-direction: row;
+}
+
+.card-horisontal img {
+  max-width: 300px;
+  width: 100%;
 }
 
 .card-body {
@@ -364,4 +377,86 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.footer article {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-areas: "logo hlinks hcontact" "about ullinks ulcontact";
+  gap: 20px;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.footer-logo {
+  grid-area: logo;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-about {
+  grid-area: about;
+}
+
+.footer-h-links {
+  grid-area: hlinks;
+}
+
+.footer-ul-links {
+  grid-area: ullinks;
+}
+
+.footer-h-contact {
+  grid-area: hcontact;
+}
+
+.footer-ul-contact {
+  grid-area: ulcontact;
+}
+
+.bottombar {
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+}
+
+.courses-page .card {
+  margin-bottom: 20px;
+}
+
+.courses-page .card:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.courses-page .card:nth-child(even) img {
+  order: 1;
+}
+
+.courses-page .card:nth-child(even) .card-body {
+  text-align: right;
+}
+
+.courses-page .card:first-child {
+  margin-top: 30px;
+}
+
+.courses-page .card:last-child {
+  margin-bottom: 0px;
 }
