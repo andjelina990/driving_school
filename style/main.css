@@ -77,6 +77,38 @@ img {
   margin: 30px 0;
 }
 
+.slideInRight {
+  animation-name: inRight;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.02, 0.67, 1, 0.4);
+}
+
+@keyframes inRight {
+  from {
+    transform: translateX(50vw) rotateY(720deg);
+  }
+  to {
+    transform: translateX(0vw) rotateY(0);
+  }
+}
+
+.slideInLeft {
+  animation-name: inLeft;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.02, 0.67, 1, 0.4);
+}
+
+@keyframes inLeft {
+  from {
+    transform: translateX(-50vw) rotateY(720deg);
+    background-color: red;
+  }
+  to {
+    transform: translateX(0vw) rotateY(0);
+    background-color: #233785;
+  }
+}
+
 .btn {
   text-transform: uppercase;
   padding: 2rem 3rem;
@@ -86,6 +118,7 @@ img {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
 .btn-small {
@@ -97,9 +130,18 @@ img {
   color: #ffffff;
 }
 
+.btn-primary:hover {
+  background-color: #020a2a;
+}
+
 .btn-secondary {
   background-color: #ffffff;
   color: #000;
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #333333;
 }
 
 [class*="g-col-"] {
@@ -507,8 +549,81 @@ img {
 
 .teacher .card a i {
   color: #233785;
+  transition: transform 0.4s ease;
+}
+
+.teacher .card a i:hover {
+  transform: rotate(30deg);
 }
 
 .teacher .card a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact .mixins {
+  border: 1px solid navy;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact .mixins .box {
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "name email phone" "message message message" "....... ..... submit";
+  gap: 10px;
+  width: 100%;
+}
+
+.contact input, .contact textarea {
+  padding: 5px 10px;
+  outline: none;
+  transition: 0.4s ease;
+  border: none;
+  box-shadow: 0 0 5px #808080;
+}
+
+.contact input:focus, .contact textarea:focus {
+  box-shadow: 0 0 5px #ff6347;
+}
+
+.contact textarea {
+  resize: none;
+}
+
+.contact [name="name"] {
+  grid-area: name;
+}
+
+.contact [name="email"] {
+  grid-area: email;
+}
+
+.contact [name="phone"] {
+  grid-area: phone;
+}
+
+.contact [name="message"] {
+  grid-area: message;
+}
+
+.contact .btn {
+  grid-area: submit;
+}
+
+.contact ul {
+  margin-top: 20px;
+}
+
+.contact i {
+  color: #233785;
   margin-right: 10px;
 }

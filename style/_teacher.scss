@@ -12,6 +12,10 @@
       //   margin-right: 10px;
       i {
         color: $primaryColor;
+        transition: transform $transition;
+        &:hover {
+          transform: rotate(30deg);
+        }
       }
       //   &:last-child {
       //     margin-right: 0px;
