@@ -7,9 +7,15 @@
 
   &-horisontal {
     flex-direction: row;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
     img {
       max-width: 300px;
       width: 100%;
+      @media (max-width: 480px) {
+        max-width: unset;
+      }
     }
   }
 
@@ -19,5 +25,8 @@
   }
   &-footer {
     padding: 10px;
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
 }

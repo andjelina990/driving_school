@@ -6,6 +6,9 @@
 
 html {
   font-size: 62.5%;
+  @media (max-width: 480px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -35,10 +38,16 @@ img {
 .container {
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 }
 
 .py {
   padding: 10rem 0;
+  @media (max-width: 480px) {
+    padding: 5rem 0;
+  }
 }
 
 .title {

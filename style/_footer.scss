@@ -9,6 +9,16 @@
       "logo hlinks hcontact"
       "about ullinks ulcontact";
     gap: 20px;
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "logo"
+        "about"
+        "hlinks"
+        "ullinks"
+        "hcontact"
+        "ulcontact";
+    }
   }
   h3 {
     text-transform: uppercase;

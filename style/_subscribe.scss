@@ -9,6 +9,9 @@
     max-width: 900px;
     margin: 30px auto 0;
     gap: 5px;
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
 
     input {
       outline: none;

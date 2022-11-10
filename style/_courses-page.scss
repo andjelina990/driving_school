@@ -7,9 +7,15 @@
       //   flex-direction: row-reverse;
       img {
         order: 1;
+        @media (max-width: 480px) {
+          order: unset;
+        }
       }
       .card-body {
         text-align: right;
+        @media (max-width: 480px) {
+          text-align: left;
+        }
       }
     }
 
