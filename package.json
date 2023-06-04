@@ -1,0 +1,19 @@
+{
+  "name": "driving_school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zile028/driving_school.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zile028/driving_school/issues"
+  },
+  "homepage": "https://github.com/zile028/driving_school#readme"
+}
